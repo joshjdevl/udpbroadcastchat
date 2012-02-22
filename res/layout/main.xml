@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:weightSum="1">
+<TextView
+    android:layout_width="fill_parent"
+    android:text="@string/hello" android:layout_height="wrap_content"/>
+<EditText android:layout_width="match_parent" android:layout_height="wrap_content" android:id="@+id/SENDIPADDRESSID">
+    <requestFocus></requestFocus>
+</EditText>
+<EditText android:layout_height="wrap_content" android:layout_width="match_parent" android:id="@+id/SENDPORTID"></EditText>
+<EditText android:layout_height="wrap_content" android:layout_width="match_parent" android:inputType="textMultiLine" android:id="@+id/SENDMESSAGETEXTID" android:layout_weight="0.16"></EditText>
+<Button android:layout_height="wrap_content" android:layout_width="wrap_content" android:onClick="sendMessage" android:id="@+id/SENDMESSAGEBUTTONID" android:text="@string/sendmsg"></Button>
+<Button android:layout_height="wrap_content" android:layout_width="wrap_content" android:onClick="startSender" android:id="@+id/STARTSENDERBUTTONID" android:text="@string/startsender"></Button>
+<Button android:layout_height="wrap_content" android:id="@+id/STARTRECEIVERBUTTONID" android:layout_width="wrap_content" android:text="@string/startreceiver" android:onClick="startReceiver"></Button>
+</LinearLayout>
